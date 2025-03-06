@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from load_data import load_data
 
 def load_data():
     inventory_df = pd.read_csv ("main/inventory.csv")

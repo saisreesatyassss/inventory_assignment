@@ -64,11 +64,11 @@
 
 import pandas as pd
 import streamlit as st
-
-def load_data():
-    inventory_df = pd.read_csv("main/inventory.csv")
-    combos_df = pd.read_csv("main/combos.csv")
-    return inventory_df, combos_df
+from load_data import load_data
+# def load_data():
+#     inventory_df = pd.read_csv("main/inventory.csv")
+#     combos_df = pd.read_csv("main/combos.csv")
+#     return inventory_df, combos_df
 
 def update_inventory(selected_combos, inventory_df):
     for combo in selected_combos:
